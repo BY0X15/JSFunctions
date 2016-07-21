@@ -5,6 +5,8 @@ function searchAndReplaceLinks() {
 
   $("a.post__title_link").map(function(key, value){
 
+    if (key > 1) return;
+
     const origLink = $(value)[0].href;
     const urlEncode = encodeURIComponent(origLink);
     const fakeLink = `${baseLink}/?to=${urlEncode}`;
