@@ -10,7 +10,7 @@
    <pre>var q = document.createElement("a");<br>
     q.setAttribute("download", <b>name</b> + ".mp3");<br>
     q.setAttribute("title", <b>name</b> + ".mp3");<br>
-    q.setAttribute("class", "vkmusic-btn-download-link-new");<br>
+    q.setAttribute("class", <b>className</b>);<br>
     q.setAttribute("href", <b>link</b> + "?/" + <b>name</b> + ".mp3");<br>
     <b>$(q).click(function(w) {<br>
         w.cancelBubble = true;<br>
