@@ -1,4 +1,5 @@
-# Normal the name at downloading file (music, video, etc)
+# VK
+## Normal the name at downloading file (music, video, etc)
 1. In background[js] insert file with: 
 <br>
     <pre>chrome.runtime.onMessage.addListener(function(b,a,c){<br>
@@ -22,8 +23,8 @@
    });</b>
    </pre>
 
-
-# Get URL YouTube
+# YouTube
+## Get URL YouTube
 Get meta (url, preview, ...) video with youtube <br>
 http://www.youtube.com/get_video_info?video_id=-9vgJ4u4saI <br>
 Where -9vgJ4u4saI - id video <br>
