@@ -23,7 +23,15 @@
    });</b>
    </pre>
 
+## Method downloading video.
+1. The download button in share block
+2. Downloading the file that is selected in the player
+
 # YouTube
+## Position download button
+Button the download must be of about subscribe button.<br>
+Color button the download - #13b327
+
 ## Get URL YouTube
 Get meta (url, preview, ...) video with youtube <br>
 http://www.youtube.com/get_video_info?video_id=-9vgJ4u4saI <br>
