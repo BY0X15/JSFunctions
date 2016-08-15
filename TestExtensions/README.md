@@ -5,9 +5,9 @@ One the item of the obtained array
 <pre><code>
 [
 <br>
-0: 22<br>
-1: mp4<br>
-2: https://.../<br>
+0: 22,
+1: mp4,
+2: https://.../
 <br>
 ]
 </code></pre>
