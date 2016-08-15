@@ -17,6 +17,6 @@ One the item of the obtained array
 <br>
 Deciphering the contents of the array<br>
 <b>0</b> - itag, the tag by which obtained the video quality<br>
-<b>1</b> - array with codesc and format( video/audio )
+<b>1</b> - array with codesc and format( video/audio )<br>
 <b>2</b> - direct url<br>
 ### Some the video, does not have a audio
