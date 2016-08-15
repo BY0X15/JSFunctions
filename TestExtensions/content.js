@@ -50,13 +50,21 @@ $(document).ready(() => {
 
         setTimeout(() => {
 
-          if (t1.indexOf('type=') >= 0 && t1.indexOf('codecs') >= 0) tq0.push(urldecode(t1.split('=')[1]).split(';')[0].split('/')[1]);
+          if (t1.indexOf('type=') >= 0 && t1.indexOf('codecs') >= 0) {
+
+            const tq1 = [];
+
+            tq1.push(urldecode(t1.split('=')[1]).split(';')[0].split('/')[0])
+            tq1.push(urldecode(t1.split('=')[1]).split(';')[0].split('/')[1]);
+
+            tq0.push(tq1);
+          }
         }, 2);
 
         setTimeout(() => {
 
           if (t1.indexOf('url=') >= 0 && t1.indexOf('googlevideo.com') > 0) tq0.push(t1.split('=')[1]);
-        }, 3);
+        }, 4);
       }
 
       tq.push(tq0);
