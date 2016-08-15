@@ -16,5 +16,4 @@ Deciphering the contents of the array<br>
 <b>0</b> - itag, the tag by which obtained the video quality<br>
 <b>1</b> - codec, codec the video<br>
 <b>2</b> - direct url<br>
-<br>
 ### Some the video, does not have a audio
