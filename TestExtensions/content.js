@@ -19,8 +19,14 @@ function parseQS(varName, qs) {
 
 $(document).ready(() => {
 
+  if (location.hostname !== 'www.youtube.com' || location.pathname !== '/watch') return;
+
+  const id = location.search.split('=')[1];
+
+  console.log(id);
+
   $.ajax({
-    url: "https://www.youtube.com/get_video_info?&video_id=kObNpTFPV5c"
+    url: "https://www.youtube.com/get_video_info?&video_id=" + id
   }).done(function(ev) {
 
     const q = ev.split('fmt_url_map')[0];
@@ -63,7 +69,7 @@ $(document).ready(() => {
 
         setTimeout(() => {
 
-          if (t1.indexOf('url=') >= 0 && t1.indexOf('googlevideo.com') > 0) tq0.push(t1.split('=')[1]);
+          if (t1.indexOf('url=') >= 0 && t1.indexOf('googlevideo.com') > 0) tq0.push(urldecode(t1.split('=')[1]));
         }, 4);
       }
 
